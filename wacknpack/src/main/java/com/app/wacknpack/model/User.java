@@ -13,7 +13,7 @@ public class User {
     private int points;
 
     public User (@JsonProperty("userId") int userId, @JsonProperty("email") String email,
-                 @JsonProperty("password") String password) {
+                 @JsonProperty("password") String password, @JsonProperty("points") int points) {
         this.userId = userId;
         this.email = email;
         this.password = password;
@@ -27,4 +27,6 @@ public class User {
     public String getPassword() {return this.password;}
 
     public int getPoints() {return this.points;}
+
+    public int setPoints(int newPoints) {return this.points = newPoints;}
 }

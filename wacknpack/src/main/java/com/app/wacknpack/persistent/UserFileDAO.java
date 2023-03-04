@@ -145,7 +145,7 @@ public class UserFileDAO implements UserDAO{
 
     @Override
     public User registerUser(User user) throws IOException {
-        User new_user = new User(nextId(), user.getEmail(), user.getPassword());
+        User new_user = new User(nextId(), user.getEmail(), user.getPassword(), user.getPoints());
 
         users.put(new_user.getUserId(), new_user);
         save();
@@ -161,5 +161,22 @@ public class UserFileDAO implements UserDAO{
             }
         }
         return null;
+    }
+
+    @Override
+    public int getPoints(User user) throws IOException {
+        return user.getPoints();
+    }
+
+    @Override
+    public void addPoints(User user, int pointsToAdd) throws IOException {
+        int newPointVal = user.getPoints() + pointsToAdd;
+        user.setPoints(newPointVal);
+    }
+
+    @Override
+    public void subtractPoints(User user, int pointsToSubtract) throws IOException {
+        int newPointVal = user.getPoints() - pointsToSubtract;
+        user.setPoints(newPointVal);
     }
 }

@@ -16,4 +16,9 @@ public interface UserDAO {
 
     User loginUser(String username, String password) throws IOException;
 
+    int getPoints(User user) throws IOException;
+
+    void addPoints(User user, int pointsToAdd) throws IOException;
+
+    void subtractPoints(User user, int pointsToSubtract) throws IOException;
 }
