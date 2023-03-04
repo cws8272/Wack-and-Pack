@@ -33,27 +33,27 @@ public class Location {
     }
 
     public int getLocationId() {
-        return locationId;
+        return this.locationId;
     }
 
     public String getlocationName() {
-        return locationName;
+        return this.locationName;
     }
 
     public String getAddress() {
-        return address;
+        return this.address;
     }
 
     public Long getLongitude() {
-        return longitude;
+        return this.longitude;
     }
 
     public Long getLatitude() {
-        return latitude;
+        return this.latitude;
     }
 
     public DonationAccepted getdonationType() {
-        return donationType;
+        return this.donationType;
     }
 
 }
