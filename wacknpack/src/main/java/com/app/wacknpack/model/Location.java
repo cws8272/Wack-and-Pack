@@ -4,21 +4,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Location {
     @JsonProperty("locationId")
-    private int locationId;
+    private String locationId;
     @JsonProperty("locationName")
     private String locationName;
     @JsonProperty("address")
     private String address;
     @JsonProperty("longitude")
-    private Double longitude;
+    private String longitude;
     @JsonProperty("latitude")
-    private Double latitude;
+    private String latitude;
     @JsonProperty("donationType")
     private DonationAccepted donationType;
 
-    public Location (@JsonProperty("locationId") int locationId, @JsonProperty("locationName") String locationName,
-                     @JsonProperty("address") String address, @JsonProperty("longitude") Double longitude,
-                     @JsonProperty("latitude") Double latitude, @JsonProperty("donationType") DonationAccepted donationType) {
+    public Location (@JsonProperty("locationId") String locationId, @JsonProperty("locationName") String locationName,
+                     @JsonProperty("address") String address, @JsonProperty("latitude") String latitude,
+                     @JsonProperty("longitude") String longitude, @JsonProperty("donationType") DonationAccepted donationType) {
         this.locationId = locationId;
         this.locationName = locationName;
         this.address = address;
@@ -33,7 +33,7 @@ public class Location {
         }
     }
 
-    public int getLocationId() {
+    public String getLocationId() {
         return this.locationId;
     }
 
@@ -45,11 +45,11 @@ public class Location {
         return this.address;
     }
 
-    public Double getLongitude() {
+    public String getLongitude() {
         return this.longitude;
     }
 
-    public Double getLatitude() {
+    public String getLatitude() {
         return this.latitude;
     }
 
