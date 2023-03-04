@@ -1,5 +1,7 @@
 package com.app.wacknpack.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Location {
     @JsonProperty("locationId")
     private int locationId;
@@ -23,7 +25,7 @@ public class Location {
         this.address = address;
         this.longitude = longitude;
         this.latitude = latitude;
-        this.donationType = donationType
+        this.donationType = donationType;
     }
 
     public enum DonationAccepted {
