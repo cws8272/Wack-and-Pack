@@ -10,16 +10,16 @@ public class Location {
     @JsonProperty("address")
     private String address;
     @JsonProperty("longitude")
-    private Long longitude;
+    private Double longitude;
     @JsonProperty("latitude")
-    private Long latitude;
+    private Double latitude;
     @JsonProperty("donationType")
     private DonationAccepted donationType;
 
 
     public Location (@JsonProperty("locationId") int locationId, @JsonProperty("locationName") String locationName,
-                     @JsonProperty("address") String address, @JsonProperty("longitude") Long longitude,
-                     @JsonProperty("latitude") Long latitude, @JsonProperty("donationType") DonationAccepted donationType) {
+                     @JsonProperty("address") String address, @JsonProperty("longitude") Double longitude,
+                     @JsonProperty("latitude") Double latitude, @JsonProperty("donationType") DonationAccepted donationType) {
         this.locationId = locationId;
         this.locationName = locationName;
         this.address = address;
@@ -29,7 +29,9 @@ public class Location {
     }
 
     public enum DonationAccepted {
-        APPLICANCES, BOOKS, CLOTHES, FOOD
+        APPLICANCES("appliances"), BOOKS("library"), CLOTHES("clothes"), FOOD("food");
+        DonationAccepted(String value) {
+        }
     }
 
     public int getLocationId() {
@@ -44,11 +46,11 @@ public class Location {
         return this.address;
     }
 
-    public Long getLongitude() {
+    public Double getLongitude() {
         return this.longitude;
     }
 
-    public Long getLatitude() {
+    public Double getLatitude() {
         return this.latitude;
     }
 
