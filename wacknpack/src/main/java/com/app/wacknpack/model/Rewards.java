@@ -13,7 +13,10 @@ public class Rewards {
         this.points = points;
     }
 
-    public int getUserId() {return userId;}
+    public int getUserId() {return this.userId;}
 
-    public int getPoints() {return points;}
+    public int getPoints() {return this.points;}
+
+    public int setPoints(int newPoints) {return this.points = newPoints;}
+    
 }
