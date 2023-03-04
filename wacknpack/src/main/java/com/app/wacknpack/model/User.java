@@ -13,7 +13,7 @@ public class User {
     private final UserType userType;
 
     public User (@JsonProperty("userId") int userId, @JsonProperty("email") String email,
-                 @JsonProperty("password") String password, @JsonProperty("userType") Type userType) {
+                 @JsonProperty("password") String password, @JsonProperty("userType") UserType userType) {
         this.userId = userId;
         this.email = email;
         this.password = password;
