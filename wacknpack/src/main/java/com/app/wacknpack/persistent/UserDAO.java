@@ -48,21 +48,4 @@ public interface UserDAO {
      */
     User loginUser(String username, String password) throws IOException;
 
-    /**
-     * Updates user information such as username or password
-     * 
-     * @param user
-     * @return newly updated user account
-     * @throws IOException
-     */
-    User updateUser(User user) throws IOException;
-
-    /**
-     * Deletes a User from the invantory based on ID
-     * 
-     * @param id
-     * @return either save() if found or false if not found
-     * @throws IOException
-     */
-    boolean deleteUser(int id) throws IOException;
 }

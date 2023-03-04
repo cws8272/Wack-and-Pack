@@ -59,20 +59,5 @@ public class UserController {
         }
     }
 
-    @PutMapping("/update/")
-    public ResponseEntity<User> updateUser(@RequestBody User user) {
-        LOG.info("PUT /user/update/ " + user.getEmail());
-        try {
-            User result = userDAO.updateUser(user);
-            if (result != null) {
-                return new ResponseEntity<User>(result, HttpStatus.OK);
-            } else
-                return new ResponseEntity<>(HttpStatus.CONFLICT);
-
-        } catch (Exception e) {
-            LOG.log(Level.SEVERE, e.getLocalizedMessage());
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
     
 }

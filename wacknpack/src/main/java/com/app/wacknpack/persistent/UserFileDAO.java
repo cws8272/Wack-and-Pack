@@ -160,16 +160,5 @@ public class UserFileDAO implements UserDAO{
         throw new UnsupportedOperationException("Unimplemented method 'loginUser'");
     }
 
-    @Override
-    public User updateUser(User user) throws IOException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'updateUser'");
-    }
-
-    @Override
-    public boolean deleteUser(int id) throws IOException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'deleteUser'");
-    }
     
 }
