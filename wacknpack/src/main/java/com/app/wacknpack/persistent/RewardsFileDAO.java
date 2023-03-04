@@ -18,8 +18,11 @@ public class RewardsFileDAO implements RewardsDAO{
 
     @Override
     public Integer addPoints(int point) throws Exception {
+        // retrive the rewards tied to the user id
+        // update the points
+        // save the rewards bakc to the file
         int points = 0;
-        //points = Rewards.getPoints();
+//        points = Rewards.getPoints();
         points = points + point;
         return points;
         
