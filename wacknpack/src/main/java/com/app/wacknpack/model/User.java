@@ -1,8 +1,8 @@
 package com.app.wacknpack.model;
 
 public class User {
-    @JsonProperty("user_id")
-    private final int user_id;
+    @JsonProperty("userId")
+    private final int userId;
 
     @JsonProperty("email")
     private final String email;
@@ -10,15 +10,16 @@ public class User {
     @JsonProperty("password")
     private final String password;
 
-    @JsonProperty("user_type")
-    private final Type user_type;
+    @JsonProperty("userType")
+    private final Type userType;
 
 
-    public User (@JsonProperty("uesr_id") int user_id, @JsonProperty("email") String email, @JsonProperty("password") String password, @JsonProperty("user_type") Type user_type) {
-        this.user_id = user_id;
+    public User (@JsonProperty("userId") int userId, @JsonProperty("email") String email,
+                 @JsonProperty("password") String password, @JsonProperty("userType") Type userType) {
+        this.userId = userId;
         this.email = email;
         this.password = password;
-        this.user_type = user_type;
+        this.userType = userType;
     }
 
     public enum Type {
