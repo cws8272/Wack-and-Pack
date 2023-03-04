@@ -16,4 +16,6 @@ public class Rewards {
     public int getUserId() {return userId;}
 
     public int getPoints() {return points;}
+
+    
 }
