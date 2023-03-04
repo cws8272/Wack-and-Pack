@@ -133,32 +133,41 @@ public class UserFileDAO implements UserDAO{
 
     @Override
     public User[] getUsers() throws IOException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getUsers'");
+        return getUsersArray();
     }
 
     @Override
     public User[] findUsers(String query) throws IOException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findUsers'");
+        return getUserssArray(query);
     }
 
     @Override
     public User getUser(int id) throws IOException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getUser'");
+        if (users.containsKey(id)) {
+            return users.get(id);
+        } else {
+            return null;
+        }
     }
 
     @Override
     public User registerUser(User user) throws IOException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'registerUser'");
+        User new_user = new User(nextId(), user.getEmail(), user.getPassword());
+
+        users.put(new_user.getUserId(), new_user);
+        save();
+        return new_user;
     }
 
     @Override
-    public User loginUser(String username, String password) throws IOException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'loginUser'");
+    public User loginUser(String email, String password) throws IOException {
+        User[] allUsers = getUsers();
+        for(User user: allUsers) {
+            if (user.getEmail().equals(email) && user.getPassword().equals(password)){
+                return user;
+            }
+        }
+        return null;
     }
 
     

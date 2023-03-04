@@ -13,7 +13,7 @@ public class User {
     private int points;
 
     public User (@JsonProperty("userId") int userId, @JsonProperty("email") String email,
-                 @JsonProperty("password") String password, @JsonProperty("points") int points) {
+                 @JsonProperty("password") String password) {
         this.userId = userId;
         this.email = email;
         this.password = password;
