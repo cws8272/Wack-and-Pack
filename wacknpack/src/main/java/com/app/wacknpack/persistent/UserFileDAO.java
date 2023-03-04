@@ -16,18 +16,10 @@ import org.springframework.stereotype.Component;
 
 
 public class UserFileDAO implements UserDAO{
-    // private static final Logger LOG =
-    // Logger.getLogger(PaintingFileDAO.class.getName());
-    public Map<Integer, User> users; // Provides a local cache of the painting objects
-    // so that we don't need to read from the file
-    // each time
-    private ObjectMapper objectMapper; // Provides conversion between painting
-                                       // objects and JSON text format written
-                                       // to the file
+    public Map<Integer, User> users; // Provides a local cache of the objects
+    private ObjectMapper objectMapper; // Provides conversion between objects and JSON text format written to the file
     private static int nextId; // The next Id to assign to a new painting
     private String filename; // Filename to read from and write to
-    // private String ADMIN_USERNAME = "admin";
-    // private String ADMIN_PASSWORD = "admin";
 
     /**
      * Creates a User File Data Access Object
