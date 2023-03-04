@@ -6,7 +6,7 @@ import com.app.wacknpack.model.Rewards;
 
 public interface RewardsDAO {
     
-    Integer addPoints(int point) throws Exception;
+    Rewards addPoints(int id, int point) throws Exception;
 
     Rewards subPoints(int point) throws Exception;
 
