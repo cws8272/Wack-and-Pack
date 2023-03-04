@@ -3,8 +3,8 @@ package com.app.wacknpack.controllers;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import com.app.wacknpack.DAO.UserDAO;
 import com.app.wacknpack.model.User;
-import com.app.wacknpack.persistent.UserDAO;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -59,5 +59,5 @@ public class UserController {
         }
     }
 
-    
+
 }

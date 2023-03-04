@@ -1,4 +1,4 @@
-package com.app.wacknpack.persistent;
+package com.app.wacknpack.DAO;
 
 public interface LocationDAO {
     
