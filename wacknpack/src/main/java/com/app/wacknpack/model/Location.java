@@ -16,7 +16,6 @@ public class Location {
     @JsonProperty("donationType")
     private DonationAccepted donationType;
 
-
     public Location (@JsonProperty("locationId") int locationId, @JsonProperty("locationName") String locationName,
                      @JsonProperty("address") String address, @JsonProperty("longitude") Long longitude,
                      @JsonProperty("latitude") Long latitude, @JsonProperty("donationType") DonationAccepted donationType) {
