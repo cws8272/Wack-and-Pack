@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css?family=Sora");
+.homepage {
+  display: inline;
+}
+/* .foodicon img {
+    height: 80px;
+    width: 50%;
+  } */
+
+
+.rectangle96 img {
+  height: 170px;
+  width: 100%;
+}
+.Food {
+    color:white;
+  position: relative;
+  height: 325px;
+  width: 140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    font-family: 'Sora';
+    font-size: xx-large;
+font-weight: bold;  }
+
+.fooddrives {
+    display: flex;
+    color:black;
+  position: relative;
+  top: -350px;
+  right: -100px;
+
+    font-family: 'Sora';
+    font-style: 'bold';
+    font-size: medium;
+font-weight: bolder;  }
+
+
+.search {
+padding-top: 25px;
+padding-left: 20px;
+border-radius: 25px;
+
+}
+.search input {
+border-radius: 20px;
+height: 22px;
+width: 300px;
+stroke: .5px;
+    
+    }
+    .name {
+        color:#ff5113 ;
+        font-family: 'Sora';
+position: relative;
+        top: -340px;
+        right: -100px;
+        font-weight: normal;
+            }
+            .name1 {
+                color:#ff5113 ;
+                font-family: 'Sora';
+        position: relative;
+                top: -270px;
+                right: -100px;
+                font-weight: normal;
+                    }
+                    .name2 {
+                        color:#ff5113 ;
+                        font-family: 'Sora';
+                position: relative;
+                        top: -200px;
+                        right: -100px;
+                        font-weight: normal;
+                            }
+
+            .locationfillertext {
+                font-family: 'Sora';
+        position: relative;
+                top: -350px;
+                right: -100px;
+                font-weight: light;
+                    }
+                    .locationfillertext1 {
+                        font-family: 'Sora';
+                position: relative;
+                        top: -280px;
+                        right: -100px;
+                        font-weight: light;
+                            }
+                            .locationfillertext2 {
+                                font-family: 'Sora';
+                        position: relative;
+                                top: -210px;
+                                right: -100px;
+                                font-weight: light;
+                                    }
+                                    .name3 {
+                                        color:#ff5113 ;
+                                        font-family: 'Sora';
+                                position: relative;
+                                        top: -595px;
+                                        right: -700px;
+                                        font-weight: normal;
+                                            }
+                                            .locationfillertext3 {
+                                                font-family: 'Sora';
+                                        position: relative;
+                                                top: -605px;
+                                                right: -700px;
+                                                font-weight: light;
+                                                    }
+                                                    .name4 {
+                                                        color:#ff5113 ;
+                                                        font-family: 'Sora';
+                                                position: relative;
+                                                        top: -525px;
+                                                        right: -700px;
+                                                        font-weight: normal;
+                                                            }
+                                                            .locationfillertext4 {
+                                                                font-family: 'Sora';
+                                                        position: relative;
+                                                                top: -535px;
+                                                                right: -700px;
+                                                                font-weight: light;
+                                                                    }
+                                                                    .name5 {
+                                                                        color:#ff5113 ;
+                                                                        font-family: 'Sora';
+                                                                position: relative;
+                                                                        top: -465px;
+                                                                        right: -700px;
+                                                                        font-weight: normal;
+                                                                            }
+                                                                            .locationfillertext5 {
+                                                                                font-family: 'Sora';
+                                                                        position: relative;
+                                                                                top: -475px;
+                                                                                right: -700px;
+                                                                                font-weight: light;
+                                                                                    }
+                                                                                    .name6 {
+                                                                                        color:#ff5113 ;
+                                                                                        font-family: 'Sora';
+                                                                                position: relative;
+                                                                                        top: -850px;
+                                                                                        right: -1150px;
+                                                                                        font-weight: normal;
+                                                                                            }
+                                                                                            .locationfillertext6 {
+                                                                                                font-family: 'Sora';
+                                                                                        position: relative;
+                                                                                                top: -860px;
+                                                                                                right: -1150px;
+                                                                                                font-weight: light;
+                                                                                                    }
+                                                                                                    .name7 {
+                                                                                                        color:#ff5113 ;
+                                                                                                        font-family: 'Sora';
+                                                                                                position: relative;
+                                                                                                        top: -780px;
+                                                                                                        right: -1150px;
+                                                                                                        font-weight: normal;
+                                                                                                            }
+                                                                                                            .locationfillertext7 {
+                                                                                                                font-family: 'Sora';
+                                                                                                        position: relative;
+                                                                                                                top: -790px;
+                                                                                                                right: -1150px;
+                                                                                                                font-weight: light;
+                                                                                                                    }
+                                                                                                                    .name8 {
+                                                                                                                        color:#ff5113 ;
+                                                                                                                        font-family: 'Sora';
+                                                                                                                position: relative;
+                                                                                                                        top: -710px;
+                                                                                                                        right: -1150px;
+                                                                                                                        font-weight: normal;
+                                                                                                                            }

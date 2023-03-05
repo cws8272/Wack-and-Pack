@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NavigationbarComponent } from './navigationbar/navigationbar.component';
+import { FoodComponent } from './food/food.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { NavigationbarComponent } from './navigationbar/navigationbar.component'
     HomepageComponent,
     NavigationbarComponent,
     CategoriesComponent,
+    FoodComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

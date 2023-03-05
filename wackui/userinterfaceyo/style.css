@@ -1,0 +1,13 @@
+style.css
+
+
+html{
+    font-size: 100%; /*the font size I used which is also 16px or 12pts*/
+}
+body{
+    font-size: 100%; /*the font size I used which is also 16px or 12pts*/
+    margin: 1%; /* I wanted a small margin*/
+    padding: 3%; /*I wanted a padding but not too small so that I can see the gradient in the background*/
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); /*I wanted to use a light gradient to bring attention to the black container*/
+    
+}

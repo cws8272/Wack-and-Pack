@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"
+    href="mystyle.css">
+<style>
+body{
+    background-color:white;
+}
+h1{
+    color: #292929;
+    margin-left: 34px;
+}
+</style>
+</head>
+<body>
+    
+<h1> First heading!</h1>
+
+</body>
+background-image: url(STYLETILEPROJ2-09.png);
+<display>: flex </display>
+flex-wrap: wrap;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
