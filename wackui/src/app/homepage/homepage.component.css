@@ -74,6 +74,16 @@
 
 .missionheader {
   display: flex;
+  justify-content: right;
+}
+
+.ministar {
+  padding-top: 20px;
+}
+.ministar img {
+  height: 40px;
+  width: 40px;
+  padding-right: 5px;
 }
 
 .heart {
