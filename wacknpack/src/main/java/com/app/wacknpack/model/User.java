@@ -11,20 +11,31 @@ public class User {
     private String password;
     @JsonProperty("points")
     private int points;
+    @JsonProperty("firstname")
+    private String fname;
+    @JsonProperty("lastname")
+    private String lname;
 
     public User (@JsonProperty("userId") int userId, @JsonProperty("email") String email,
-                 @JsonProperty("password") String password, @JsonProperty("points") int points) {
+                 @JsonProperty("password") String password, @JsonProperty("points") int points, @JsonProperty("firstname") String firstname, 
+                 @JsonProperty("lastname") String lastname) {
         this.userId = userId;
         this.email = email;
         this.password = password;
         this.points = points;
-    }
+        this.fname = firstname;
+        this.lname = lastname;
+        }
 
     public int getUserId() {return this.userId;}
 
     public String getEmail() {return this.email;}
 
     public String getPassword() {return this.password;}
+
+    public String getfirstname() {return this.fname;}
+
+    public String getlastname() {return this.lname;}
 
     public int getPoints() {return this.points;}
 

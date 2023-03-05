@@ -145,7 +145,7 @@ public class UserFileDAO implements UserDAO{
 
     @Override
     public User registerUser(User user) throws IOException {
-        User new_user = new User(nextId(), user.getEmail(), user.getPassword(), user.getPoints());
+        User new_user = new User(nextId(), user.getEmail(), user.getPassword(), user.getPoints(), user.getfirstname(), user.getlastname());
 
         users.put(new_user.getUserId(), new_user);
         save();
