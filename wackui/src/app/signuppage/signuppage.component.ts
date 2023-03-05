@@ -49,7 +49,7 @@ export class SignuppageComponent implements OnInit {
     var result = this.userAuth.loginAndCheck(email, password).subscribe();
     if (result != null) {
       console.log('going to the food page');
-      this.router.navigateByUrl('/food');
+      this.router.navigateByUrl('/donation/food');
     }
   }
 }

@@ -16,16 +16,25 @@ export class NavigationbarComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // var email = this.userAuth.getUserData('email');
-    // if (email != null) this.isLoggedIn = true;
-    // else this.isLoggedIn = false;
+    var email = this.userAuth.getUserData('email');
+    if (email != null) this.isLoggedIn = true;
+    else this.isLoggedIn = false;
+    // location.reload();
   }
 
   tabClicked(tab: string) {
     if (tab == 'signup') {
       this.router.navigateByUrl('/acc/signup');
+      window.location.reload();
     } else if (tab == 'login') {
       this.router.navigateByUrl('/acc/login');
-    } else this.router.navigateByUrl('/' + tab);
+    } else if (tab == 'logout') {
+      this.userAuth.clearCookies();
+      this.router.navigateByUrl('');
+    } else if (tab == 'profile') {
+      this.router.navigateByUrl('useraccount');
+    } else {
+      this.router.navigateByUrl('/donation/' + tab);
+    }
   }
 }

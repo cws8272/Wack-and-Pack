@@ -1,1 +1,1 @@
-[{"userId":1,"email":"cws@rit.edu","password":"admin","points":100,"firstname":"Claudia","lastname":"Snyder"},{"userId":2,"email":"dev@123","password":"12345","points":0,"firstname":"dev","lastname":"lop"}]
+[{"userId":1,"email":"cws@rit.edu","password":"admin","points":100,"firstname":"Claudia","lastname":"Snyder"},{"userId":2,"email":"dev@123","password":"12345","points":0,"firstname":"dev","lastname":"lop"},{"userId":3,"email":"abritd@123","password":"pass","points":0,"firstname":"angry","lastname":"bird"}]

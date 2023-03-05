@@ -2,18 +2,22 @@
 
 .category {
   font-family: "Sora";
+  padding-top: 0;
 }
 
 .rectangle {
   height: 170px;
   width: 100%;
   background-color: #ff5113;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .rectangle h1 {
   text-align: center;
   padding-top: 60px;
   color: white;
+  margin: 0px 0px;
 }
 
 .mainarea {

@@ -21,7 +21,8 @@
   font-weight: bold;
 }
 
-.profile {
+.profile,
+.profilepage {
   display: flex;
   width: 20%;
   font-weight: bolder;
@@ -33,7 +34,8 @@
   padding-right: 10px;
 }
 
-.login {
+.login,
+.logout {
   color: #ff5113;
 }
 

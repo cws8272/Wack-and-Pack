@@ -1,15 +1,21 @@
 <div class="navigationbar">
   <div class="logo"><img src="assets\logo for landing page.png" alt="" /></div>
   <div class="categories">
-    <p (click)="tabClicked('food')">Food</p>
-    <p (click)="tabClicked('appliances')">Appliances</p>
-    <p (click)="tabClicked('clothes')">Clothes</p>
-    <p (click)="tabClicked('books')">Books</p>
+    <p routerLink="/donation/Food">Food</p>
+    <p routerLink="/donation/Appliances">Appliances</p>
+    <p routerLink="/donation/Clothes">Clothes</p>
+    <p routerLink="/donation/Books">Books</p>
     <p class="points">0 Points</p>
   </div>
-  <div class="profile">
+  <div class="profile" *ngIf="!isLoggedIn">
     <p (click)="tabClicked('signup')">Sign Up</p>
     <p class="divider">|</p>
     <p class="login" (click)="tabClicked('login')">Log In</p>
+  </div>
+
+  <div class="profilepage" *ngIf="isLoggedIn">
+    <p class="profileicon" (click)="tabClicked('profile')">Profile</p>
+    <p class="divider">|</p>
+    <p class="logout" (click)="tabClicked('logout')">Log Out</p>
   </div>
 </div>

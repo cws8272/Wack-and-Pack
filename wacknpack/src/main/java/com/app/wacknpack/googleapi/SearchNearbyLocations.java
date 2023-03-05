@@ -22,7 +22,7 @@ public class SearchNearbyLocations {
     private static final String API_KEY = "AIzaSyDwr8N8aIYOGb4myt5xV9bz9DlQPN8aFJU";
     private static final String SEARCH_REQUEST_URI = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?";
     private static final HttpClient client = HttpClient.newBuilder().build();
-    private static final String DEFAULT_RADIUS = "1000";
+    private static final String DEFAULT_RADIUS = "10000";
     private static final String DEFAULT_LANGUAGE_CODE = "en";
     private static final String RANK_LOCATIONS_BY = "prominence";
     private static final String LOCATION_TYPE = "library";
@@ -36,7 +36,7 @@ public class SearchNearbyLocations {
     public List<Location> getNearbyLocations(Location loc) {
         String REQUEST_URI = SEARCH_REQUEST_URI + "location=" + loc.getLatitude() + "," +
                 loc.getLongitude() + "&radius=" + DEFAULT_RADIUS + "&rankby=" + RANK_LOCATIONS_BY +
-                "&keyword=" + loc.getdonationType().name() + "&key=" + API_KEY;
+                "&keyword=" + loc.getlocationName() + "&key=" + API_KEY;
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(REQUEST_URI))
                 .headers("Content-Type", "application/json")
