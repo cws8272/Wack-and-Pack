@@ -1,0 +1,40 @@
+<div class="signup">
+  <div class="divider">
+    <div class="signupform" *ngIf="scenario == 'sign up'">
+      <div class="signupheader">
+        <h1>Sign Up</h1>
+      </div>
+      <form action="">
+        <h3>Personal Information</h3>
+        <input type="text" placeholder="First Name" #firstname />
+        <br />
+        <input type="text" placeholder="Last Name" #lastname />
+
+        <h3>Contact Information</h3>
+        <input type="text" placeholder="Email address" #email />
+        <br />
+        <input type="text" placeholder="Password" #password />
+        <br />
+        <button>Sign up</button>
+      </form>
+    </div>
+
+    <div class="loginform" *ngIf="scenario == 'log in'">
+      <div class="loginheader">
+        <h1>Log In</h1>
+      </div>
+      <form action="">
+        <h3>Welcome back!</h3>
+        <input type="text" placeholder="Email address" #email />
+        <br />
+        <input type="text" placeholder="Password" #password />
+        <br />
+        <button>Log In</button>
+      </form>
+    </div>
+
+    <div class="notepicture">
+      <img src="assets\overlayiconontherightofthesignuppage.png" alt="" />
+    </div>
+  </div>
+</div>
