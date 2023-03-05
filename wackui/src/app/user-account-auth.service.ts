@@ -54,6 +54,8 @@ export class UserAccountAuthService {
     this.cookieService.set('userid', user.userId.toString());
     this.cookieService.set('email', user.email.toString());
     this.cookieService.set('password', user.password.toString());
+    this.cookieService.set('firstname', user.firstname.toString());
+    this.cookieService.set('lastname', user.lastname.toString());
   }
 
   getUserData(query: String): string {

@@ -31,6 +31,8 @@ export class NavigationbarComponent implements OnInit {
     } else if (tab == 'logout') {
       this.userAuth.clearCookies();
       this.router.navigateByUrl('');
+    } else if (tab == 'profile') {
+      this.router.navigateByUrl('useraccount');
     } else {
       this.router.navigateByUrl('/donation/' + tab);
     }
