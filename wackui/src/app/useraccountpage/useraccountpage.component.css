@@ -1,6 +1,13 @@
 .profile{
     font-family: "Sora";
+    padding-left: 120px;
+    padding-top: 40px;
+    text-align: left;
+    display: flex;
+    overflow-x: hidden;
+
 }
+
 .nameheader{
     color: #ff5113;
 }
@@ -13,3 +20,36 @@
 .pointsheader{
     color: #ff5113;
 }
+.righticon{
+right: -950px;
+bottom: 500px;
+    display: flex;
+  justify-content: right;
+  width: 50%;
+}
+.other50{
+    width: 50%;
+    padding-left: 20px;
+}
+.header {
+    display: flex;
+}
+.tinystar{
+    padding-top: 25px;
+    padding-right: 5px;
+}
+.profileicon{
+    padding-top:5px;
+}
+.profileinfo{
+    padding-left: 35px;
+}
+.points{
+    color:white;
+    background-color: black;
+    border-radius: 25px;
+    width: 160px;
+    height: 28px;
+    text-align: center;
+padding-top: 10px;
+font-size: 13px;}
