@@ -10,10 +10,12 @@
     </p>
     <select name="categories">
       <option value="default">Choose a category</option>
-      <option value="food">Food</option>
-      <option value="appliances">Appliances</option>
-      <option value="clothes">Clothes</option>
-      <option value="books">Books</option>
+      <option value="food" (click)="goToCategory('Food')">Food</option>
+      <option value="appliances" (click)="goToCategory('Appliances')">
+        Appliances
+      </option>
+      <option value="clothes" (click)="goToCategory('Clothes')">Clothes</option>
+      <option value="books" (click)="goToCategory('Books')">Books</option>
     </select>
   </div>
 

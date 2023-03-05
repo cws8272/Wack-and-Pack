@@ -9,8 +9,10 @@
       <h3>{{ category }} drives near you</h3>
       <div class="search">
         <form>
-          <input type="text" placeholder="Enter location here" />
-          <button class="searchbtn" type="button">search</button>
+          <input type="text" placeholder="Enter location here" #query />
+          <button class="searchbtn" type="button" (click)="search(query.value)">
+            search
+          </button>
         </form>
       </div>
     </div>
