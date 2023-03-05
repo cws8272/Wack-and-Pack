@@ -9,6 +9,8 @@ import { NavigationbarComponent } from './navigationbar/navigationbar.component'
 import { SignuppageComponent } from './signuppage/signuppage.component';
 import { SignupcompletepageComponent } from './signupcompletepage/signupcompletepage.component';
 import { UseraccountpageComponent } from './useraccountpage/useraccountpage.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -20,8 +22,8 @@ import { UseraccountpageComponent } from './useraccountpage/useraccountpage.comp
     SignupcompletepageComponent,
     UseraccountpageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  providers: [CookieService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

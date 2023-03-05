@@ -9,8 +9,10 @@ import com.app.wacknpack.DAO.UserDAO;
 import com.app.wacknpack.model.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-
+@Component
 public class UserFileDAO implements UserDAO{
     public Map<Integer, User> users; // Provides a local cache of the objects
     private ObjectMapper objectMapper; // Provides conversion between objects and JSON text format written to the file

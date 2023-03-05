@@ -6,14 +6,15 @@ import { SignuppageComponent } from './signuppage/signuppage.component';
 import { UseraccountpageComponent } from './useraccountpage/useraccountpage.component';
 
 const routes: Routes = [
-  {path: '', component: HomepageComponent},
-  {path: 'signup', component: SignuppageComponent},
-  {path: 'signupcomplete', component: SignupcompletepageComponent},
-  {path: 'useraccount', component: UseraccountpageComponent}
+  { path: '', component: HomepageComponent },
+  { path: 'acc/:scenario', component: SignuppageComponent },
+  { path: 'donation/:type', component: HomepageComponent },
+  { path: 'signupcomplete', component: SignupcompletepageComponent },
+  { path: 'useraccount', component: UseraccountpageComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

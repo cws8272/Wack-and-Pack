@@ -26,9 +26,9 @@ public class UserController {
         this.userDAO = userDAO;
     }
 
-    @PostMapping("")
+    @PostMapping("/new")
     public ResponseEntity<User> createUser(@RequestBody User user) {
-        LOG.info("POST /user " + user);
+        LOG.info("POST /user " + user.getfirstname());
         try {
             User result = userDAO.registerUser(user);
     
