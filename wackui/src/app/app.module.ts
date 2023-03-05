@@ -11,6 +11,8 @@ import { SignupcompletepageComponent } from './signupcompletepage/signupcomplete
 import { UseraccountpageComponent } from './useraccountpage/useraccountpage.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CookieService } from 'ngx-cookie-service';
+import { FoodComponent } from './food/food.component';
+import { DonationCategoryComponent } from './donation-category/donation-category.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { CookieService } from 'ngx-cookie-service';
     SignuppageComponent,
     SignupcompletepageComponent,
     UseraccountpageComponent,
+    FoodComponent,
+    DonationCategoryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [CookieService],

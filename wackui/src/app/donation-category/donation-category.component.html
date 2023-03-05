@@ -1,0 +1,25 @@
+<div class="category">
+  <div class="rectangle">
+    <h1>{{ category }}</h1>
+    <!-- <img src="assets\foodicon.png" alt="foodicon" /> -->
+  </div>
+
+  <div class="mainarea">
+    <div class="header">
+      <h3>{{ category }} drives near you</h3>
+      <div class="search">
+        <form>
+          <input type="text" placeholder="Enter location here" />
+          <button class="searchbtn" type="button">search</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="searchresult" *ngFor="let loc of searchResults">
+      <div>
+        <h4>{{ loc.locationName }}</h4>
+        <p>{{ loc.address }}</p>
+      </div>
+    </div>
+  </div>
+</div>

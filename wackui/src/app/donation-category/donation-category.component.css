@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Sora");
+
+.category {
+  font-family: "Sora";
+}
+
+.rectangle {
+  height: 170px;
+  width: 100%;
+  background-color: #ff5113;
+}
+
+.rectangle h1 {
+  text-align: center;
+  padding-top: 60px;
+  color: white;
+}
+
+.mainarea {
+  padding-top: 40px;
+}
+
+.header {
+  display: flex;
+  padding-left: 100px;
+}
+
+.header h3 {
+  padding-right: 50px;
+}
+
+.header input {
+  font-family: "Sora";
+}
+
+.search {
+  padding-top: 15px;
+}
+
+.search input {
+  height: 30px;
+  width: 300px;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+.search button {
+  background-color: black;
+  border-radius: 20px;
+  padding: 7px 20px;
+  margin-left: 10px;
+  color: white;
+  font-family: "Sora";
+}
+
+.searchresult {
+  padding-left: 120px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.searchresult h4 {
+  color: #ff5113;
+}
