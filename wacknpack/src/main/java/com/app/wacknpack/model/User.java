@@ -9,12 +9,15 @@ public class User {
     private String email;
     @JsonProperty("password")
     private String password;
+    @JsonProperty("points")
+    private int points;
 
     public User (@JsonProperty("userId") int userId, @JsonProperty("email") String email,
-                 @JsonProperty("password") String password) {
+                 @JsonProperty("password") String password, @JsonProperty("points") int points) {
         this.userId = userId;
         this.email = email;
         this.password = password;
+        this.points = points;
     }
 
     public int getUserId() {return this.userId;}
@@ -22,4 +25,8 @@ public class User {
     public String getEmail() {return this.email;}
 
     public String getPassword() {return this.password;}
+
+    public int getPoints() {return this.points;}
+
+    public int setPoints(int newPoints) {return this.points = newPoints;}
 }

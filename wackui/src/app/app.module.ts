@@ -7,16 +7,9 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NavigationbarComponent } from './navigationbar/navigationbar.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomepageComponent,
-    NavigationbarComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, HomepageComponent, NavigationbarComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
