@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Sora");
+.signup {
+  font-family: "Sora";
+  width: 100%;
+  padding-top: 50px;
+  overflow-x: hidden;
+}
+
+.divider {
+  display: flex;
+}
+
+.signupform,
+.loginform {
+  width: 50%;
+  padding-left: 200px;
+}
+
+h3 {
+  color: #ff5113;
+}
+
+input {
+  height: 40px;
+  width: 350px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  text-align: left;
+  font-family: "Sora";
+}
+
+button {
+  background-color: black;
+  border-radius: 20px;
+  padding: 7px 155px;
+  color: white;
+  font-family: "Sora";
+}
+
+.notepicture {
+  width: 50%;
+}
+
+.notepicture img {
+  height: 600px;
+}

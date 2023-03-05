@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.net.URI;
@@ -16,6 +17,7 @@ import java.util.List;
 
 
 @Slf4j
+@Service
 public class SearchNearbyLocations {
     private static final String API_KEY = "AIzaSyDwr8N8aIYOGb4myt5xV9bz9DlQPN8aFJU";
     private static final String SEARCH_REQUEST_URI = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?";

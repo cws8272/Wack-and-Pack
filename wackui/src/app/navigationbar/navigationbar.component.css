@@ -40,3 +40,7 @@
 .points {
   color: #ff5113;
 }
+
+p {
+  cursor: pointer;
+}

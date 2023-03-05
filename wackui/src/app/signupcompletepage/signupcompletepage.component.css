@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Sora");
+
+.complete {
+  overflow-x: hidden;
+  height: min-content;
+}
+
+.almostdone {
+  text-align: center;
+  padding-top: 100px;
+  font-family: "Sora";
+  z-index: 100;
+}
+
+h3 {
+  color: #ff5113;
+}
+
+select {
+  height: 40px;
+  width: 300px;
+  padding-left: 10px;
+  font-family: "Sora";
+}
+
+option {
+  font-family: "Sora";
+}
+
+.stars {
+  position: relative;
+  top: -350px;
+  left: 70px;
+  z-index: -1;
+}
+
+.stars img {
+  width: 1000px;
+}
